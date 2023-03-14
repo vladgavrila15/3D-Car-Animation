@@ -34,8 +34,12 @@ const swiper = new Swiper(slider, {
     threshold:1,
     preventInteractionOnTransition: true, 
     mousewheel: {
-        forceToAxis: true}
-    });
+        forceToAxis: true,
+    }
+    keyboard: {
+        enabled: true,
+    }
+    on: {
     init: () => {
         /* SLIDER & TITLE FADE IN */
         gsap.to(slider, {
@@ -63,4 +67,5 @@ const swiper = new Swiper(slider, {
             });
         });
     }
-
+}, 
+});
